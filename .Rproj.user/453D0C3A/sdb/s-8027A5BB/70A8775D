@@ -1,0 +1,16 @@
+{
+    "contents" : "library(markdown)\n\nshinyUI(\n    navbarPage(\"Iris ML App\",\n        tabPanel(\"Classify\",\n            sidebarLayout(\n                sidebarPanel(\n                    selectInput(\"select\", label = h4(\"Classification method\"), \n                                choices = list(\"Random forest\" = 1, \"Tree\" = 2,\n                                               \"k-Nearest neighbor\" = 3), \n                                selected = 1),\n                    numericInput(\"sl\", label = h4(\"Sepal length\"),value=0.0),\n                    numericInput(\"sw\", label = h4(\"Sepal width\"),value=0.0),\n                    numericInput(\"pl\", label = h4(\"Petal length\"),value=0.0),\n                    numericInput(\"pw\", label = h4(\"Petal width\"),value=0.0),\n                    actionButton(\"goButton\", \"Go!\",value=TRUE),\n                    actionButton(\"resetButton\", \"Reset\",value=TRUE)\n                ),\n                mainPanel( \n                    # Result\n                    # Image result\n                    htmlOutput(\"prediction\"),\n                    htmlOutput(\"irisImg\")\n                )\n            )\n        ),\n        tabPanel(\"Data\",\n            tabsetPanel(type = \"tabs\", \n                tabPanel(\"Testing\", dataTableOutput(outputId=\"testing\")), \n                tabPanel(\"Training\", dataTableOutput(outputId=\"training\"))\n            )\n        ),\n        tabPanel(\"About\",\n            div(h1(\"About\"),\n                h2(\"Here you will find information About the app\"),\n                p(\"http://sebastianraschka.com/Articles/2014_intro_supervised_learning.html\"),\n                p(\"https://en.wikipedia.org/wiki/Iris_flower_data_set\")\n            )\n        ),\n        tabPanel(\"Help\",\n            div(h1(\"Help\"),\n                h2(\"Here you will find help.\"),\n                img(src='iris_petal_sepal.png')\n            )\n        ) \n    )\n)\n",
+    "created" : 1434125594163.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "674022379",
+    "id" : "70A8775D",
+    "lastKnownWriteTime" : 1434356043,
+    "path" : "F:/workspace/R/devdataprod015/irisclassify/ui.R",
+    "project_path" : "ui.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
