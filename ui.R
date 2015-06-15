@@ -13,14 +13,11 @@ shinyUI(
                     numericInput("sw", label = h4("Sepal width"),value=0.0),
                     numericInput("pl", label = h4("Petal length"),value=0.0),
                     numericInput("pw", label = h4("Petal width"),value=0.0),
-                    actionButton("goButton", "Go!",value=TRUE),
-                    actionButton("resetButton", "Reset",value=TRUE)
+                    actionButton("randomButton", "Random from test set"),
+                    actionButton("classifyButton", "Classify!")
                 ),
                 mainPanel( 
-                    # Result
-                    # Image result
-                    htmlOutput("prediction"),
-                    htmlOutput("irisImg")
+                    htmlOutput("prediction")
                 )
             )
         ),
@@ -31,17 +28,11 @@ shinyUI(
             )
         ),
         tabPanel("About",
-            div(h1("About"),
-                h2("Here you will find information About the app"),
-                p("http://sebastianraschka.com/Articles/2014_intro_supervised_learning.html"),
-                p("https://en.wikipedia.org/wiki/Iris_flower_data_set")
-            )
+            source("about.R",local=TRUE,echo=FALSE)$value # $value to drop annoying TRUE
+            # https://groups.google.com/forum/#!topic/shiny-discuss/kRBT8EmNsJg
         ),
         tabPanel("Help",
-            div(h1("Help"),
-                h2("Here you will find help."),
-                img(src='iris_petal_sepal.png')
-            )
+            source("help.R",local=TRUE,echo=FALSE)$value 
         ) 
     )
 )
