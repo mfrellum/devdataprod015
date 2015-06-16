@@ -1,4 +1,6 @@
 library(caret)
+library(e1071)
+library(rpart)
 
 set.seed(1411)
 
@@ -17,8 +19,8 @@ ctrl <- trainControl(method="repeatedcv", number=10, repeats=3)
 
 # Training models takes quite a long time
 models <- list(
-        modelRF  = train(Species ~ ., data=training,method="rf",
-                prox=TRUE,allowParallel=TRUE),
+ #       modelRF  = train(Species ~ ., data=training,method="rf",
+ #               prox=TRUE,allowParallel=TRUE),
         modelT   = train(Species ~ ., data=training,method="rpart"),
         modelKNN = train(Species ~ ., data=training,method="knn",
                     trControl=ctrl, metric="Accuracy", tuneLength=20,
@@ -31,13 +33,21 @@ shinyServer(function(input, output, session) {
     output$prediction <- renderUI({  #Reactive
         input$classifyButton
         inputDF <- isolate(data.frame(Sepal.Length=input$sl, Sepal.Width=input$sw,
-                                      Petal.Length=input$pl, Petal.Width=input$pw))        
-        pred <- as.character( predict(models[as.integer(isolate(input$select))], 
-                                    inputDF)[[1]])
-        div(
-            h1("Classified as: ",pred),
-            img(src=images[[pred]])
-        )
+                                      Petal.Length=input$pl, Petal.Width=input$pw))
+        if(any(inputDF==0.0)){
+            div(
+                h1("No zeros"),
+                img(src="iris_petal_sepal.png")
+            )
+        } else {
+            pred <- as.character( predict(models[as.integer(isolate(input$select))], 
+                                          inputDF)[[1]])
+            div(
+                h1("Classified as: ",pred),
+                img(src=images[[pred]])
+            )
+            
+        }
     })
     observe({  #Reactive
         input$randomButton

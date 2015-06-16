@@ -6,8 +6,9 @@ shinyUI(
             sidebarLayout(
                 sidebarPanel(
                     selectInput("select", label = h4("Classification method"), 
-                                choices = list("Random forest" = 1, "Tree" = 2,
-                                               "k-Nearest neighbor" = 3), 
+                                choices = list("Classification tree" = 1,
+                                               "k-Nearest neighbor" = 2),
+                                             # "Random forest" = 3,    
                                 selected = 1),
                     numericInput("sl", label = h4("Sepal length"),value=0.0),
                     numericInput("sw", label = h4("Sepal width"),value=0.0),
