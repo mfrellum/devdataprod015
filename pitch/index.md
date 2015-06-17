@@ -34,6 +34,18 @@ the famous Iris data set.
 
 --- .class #id 
 
+## How to use: Classify-tab
+
+![classifyHelp](assets/img/classifyHelp.png)
+
+--- .class #id 
+
+##  How to use: Data-tab
+
+![dataHelp](assets/img/exploreData.png)
+
+--- .class #id 
+
 ## R Summary of the Iris data set
 
 
@@ -60,18 +72,6 @@ the famous Iris data set.
 
 --- .class #id 
 
-## Howto use: Classify-tab
-
-![classifyHelp](assets/img/classifyHelp.png)
-
---- .class #id 
-
-##  Howto use: Data-tab
-
-![dataHelp](assets/img/exploreData.png)
-
---- .class #id 
-
 ## External resources
 Here you can read more about the famous Iris data set and the classification methods
 used in this App. Images are borrowed from these sites.
@@ -80,4 +80,5 @@ used in this App. Images are borrowed from these sites.
 * [Decision tree learning](https://en.wikipedia.org/wiki/Decision_tree_learning)
 * [K-means clustering](https://en.wikipedia.org/wiki/K-means_clustering)
 
-This presentation was made with [Slidyfy](http://slidify.org).
+This presentation was made with [Slidify](http://slidify.org).
+
