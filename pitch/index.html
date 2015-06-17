@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Iris ML App</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Iris ML App">
+  <meta name="author" content="Morten Frellumstad">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Iris ML App</h1>
+    <h2>Pitch</h2>
+    <p>Morten Frellumstad<br/>Developing Data Products 015</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <article data-timings="">
+    <style>
+  .title-slide {
+    background-image: url(assets/img/bkg.png);
+    background-repeat: no-repeat;
+    background-position: 70% 50%;
+   }
+</style>
+
+<!---
+https://github.com/ramnathv/slidify/issues/373
+install_github('ramnathv/slidify', ref = github_pull(425))
+-->
+
+<h2>Explore and experiment</h2>
+
+<p>The Iris ML App lets you do some interactiv exploring and experimentation in your web browser on
+the famous Iris data set.</p>
+
+<h3>The App has two main parts:</h3>
+
+<ol>
+<li>The Classify-tab</li>
+<li>The Data-tab</li>
+</ol>
+
+<h1><a href="https://mfrellum.shinyapps.io/Irisclassify">Try it out yourself!</a></h1>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>R Summary of the Iris data set</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r"> summary(iris)
+</code></pre>
+
+<pre><code>##   Sepal.Length    Sepal.Width     Petal.Length    Petal.Width   
+##  Min.   :4.300   Min.   :2.000   Min.   :1.000   Min.   :0.100  
+##  1st Qu.:5.100   1st Qu.:2.800   1st Qu.:1.600   1st Qu.:0.300  
+##  Median :5.800   Median :3.000   Median :4.350   Median :1.300  
+##  Mean   :5.843   Mean   :3.057   Mean   :3.758   Mean   :1.199  
+##  3rd Qu.:6.400   3rd Qu.:3.300   3rd Qu.:5.100   3rd Qu.:1.800  
+##  Max.   :7.900   Max.   :4.400   Max.   :6.900   Max.   :2.500  
+##        Species  
+##  setosa    :50  
+##  versicolor:50  
+##  virginica :50  
+##                 
+##                 
+## 
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Howto use: Classify-tab</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="assets/img/classifyHelp.png" alt="classifyHelp"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Howto use: Data-tab</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="assets/img/exploreData.png" alt="dataHelp"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>External resources</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Here you can read more about the famous Iris data set and the classification methods
+used in this App. Images are borrowed from these sites.</p>
+
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Iris_flower_data_set">Iris flower data set</a></li>
+<li><a href="http://sebastianraschka.com/Articles/2014_intro_supervised_learning.html">Supervised learning</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Decision_tree_learning">Decision tree learning</a></li>
+<li><a href="https://en.wikipedia.org/wiki/K-means_clustering">K-means clustering</a></li>
+</ul>
+
+<p>This presentation was made with <a href="slidify.org">Slidyfy</a>.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='NA'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='R Summary of the Iris data set'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Howto use: Classify-tab'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Howto use: Data-tab'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='External resources'>
+         5
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
