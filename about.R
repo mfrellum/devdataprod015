@@ -6,7 +6,7 @@ div(
       a("https://class.coursera.org/devdataprod-015")),
     h2("External resources"),
     p("Here you can read more about the famous Iris data set and the classification methods",
-      "used in this App. Images are borrowed from thes sites."),
+      "used in this App. Images are borrowed from these sites."),
     tags$ul(
         tags$li(a("http://sebastianraschka.com/Articles/2014_intro_supervised_learning.html")),
         tags$li(a("https://en.wikipedia.org/wiki/Iris_flower_data_set")),
