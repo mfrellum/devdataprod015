@@ -80,4 +80,4 @@ used in this App. Images are borrowed from these sites.
 * [Decision tree learning](https://en.wikipedia.org/wiki/Decision_tree_learning)
 * [K-means clustering](https://en.wikipedia.org/wiki/K-means_clustering)
 
-This presentation was made with [Slidyfy](slidify.org).
+This presentation was made with [Slidyfy](http://slidify.org).
