@@ -30,6 +30,12 @@ the famous Iris data set.
 1. The Classify-tab
 2. The Data-tab
 
+### Structur of the Iris data set in R
+
+```{r iris-summary}
+ str(iris)
+```
+
 # [Try it out yourself!](https://mfrellum.shinyapps.io/Irisclassify)
 
 --- .class #id 
@@ -43,14 +49,6 @@ the famous Iris data set.
 ##  How to use: Data-tab
 
 ![dataHelp](assets/img/exploreData.png)
-
---- .class #id 
-
-## R Summary of the Iris data set
-
-```{r iris-summary}
- summary(iris)
-```
 
 --- .class #id 
 
